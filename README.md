@@ -1,4 +1,4 @@
-# Muon-Imaging
+# Muon-Tomography-of-Different-Terrain
 GEANT4 based muon radiography simulation code
 Baseline for to start experimenting. Will continue with different geometries, and try materials.
 Experiment to use it in historical sites in Turkey.
