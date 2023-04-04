@@ -1,5 +1,7 @@
 # Muon-Imaging
-GEANT4 based muon imaging system
+GEANT4 based muon radiography simulation code
+Baseline for to start experimenting. Will continue with different geometries, and try materials.
+Experiment to use it in historical sites in Turkey.
 
 
 https://apc.u-paris.fr/~franco/g4doxy/html/namespaces.html for the packages
