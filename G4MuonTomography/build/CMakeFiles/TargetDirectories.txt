@@ -1,0 +1,7 @@
+/home/essnusb/Desktop/project/build/CMakeFiles/MyGeant4Executable.dir
+/home/essnusb/Desktop/project/build/CMakeFiles/edit_cache.dir
+/home/essnusb/Desktop/project/build/CMakeFiles/rebuild_cache.dir
+/home/essnusb/Desktop/project/build/CMakeFiles/list_install_components.dir
+/home/essnusb/Desktop/project/build/CMakeFiles/install.dir
+/home/essnusb/Desktop/project/build/CMakeFiles/install/local.dir
+/home/essnusb/Desktop/project/build/CMakeFiles/install/strip.dir
