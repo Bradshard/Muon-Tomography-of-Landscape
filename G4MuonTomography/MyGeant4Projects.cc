@@ -41,34 +41,34 @@ int main(int argc, char** argv) {
 
     // Get the pointer to the User Interface manager
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
-	/*
-    if (!ui) {
-        // Batch mode
-        G4String command = "/control/execute ";
-        G4String fileName = "init.mac";  // Adjust the path if needed
-        UImanager->ApplyCommand(command + fileName);
-    } else {
-        // Interactive mode
-        UImanager->ApplyCommand("/control/execute init.mac");
-        ui->SessionStart();
-        delete ui;
-    }*/
+	
+//    if (!ui) {
+//        // Batch mode
+//        G4String command = "/control/execute ";
+//        G4String fileName = "init.mac";  // Adjust the path if needed
+//        UImanager->ApplyCommand(command + fileName);
+//    } else {
+//        // Interactive mode
+//        UImanager->ApplyCommand("/control/execute init.mac");
+//        ui->SessionStart();
+//        delete ui;
+//    }
     if ( argc == 1 ) {
      // interactive mode : define UI session
-     G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+//     G4UIExecutive* ui = new G4UIExecutive(argc, argv);
      UImanager->ApplyCommand("/control/execute init.mac");
      ui->SessionStart();
      delete ui;
    }
-   else {
-      //batch mode
-     G4String command = "/control/execute ";
-     G4String fileName = argv[1];
-     UImanager->ApplyCommand(command+fileName);
-   }
+//   else {
+//      //batch mode
+//     G4String command = "/control/execute ";
+//     G4String fileName = argv[1];
+//     UImanager->ApplyCommand(command+fileName);
+//   }
     
     // Job termination
-    //delete visManager;
+    delete visManager;
     delete runManager;
 
     return 0;

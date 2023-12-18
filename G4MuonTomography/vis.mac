@@ -81,10 +81,10 @@
 #/vis/set/textColour    # Revert to default text colour (blue)
 #
 # Axes, scale, etc.
-/vis/scene/add/scale   # Simple scale line
-/vis/scene/add/axes    0 0 0 50 meter # Simple axes: x=red, y=green, z=blue.
-/vis/scene/add/eventID # Drawn at end of event
-/vis/scene/add/date    # Date stamp
+#/vis/scene/add/scale   # Simple scale line
+#/vis/scene/add/axes    #0 0 0 50 meter # Simple axes: x=red, y=green, z=blue.
+#/vis/scene/add/eventID # Drawn at end of event
+#/vis/scene/add/date    # Date stamp
 #/vis/scene/add/logo2D  # Simple logo
 #/vis/scene/add/logo    # 3D logo
 #
@@ -104,7 +104,8 @@
 # Make the "World" box invisible
 /vis/geometry/set/visibility World 0 false
 # "Envelope" is transparent blue to represent water
-/vis/geometry/set/colour Water 0 0 0 1 .3
+/vis/geometry/set/colour ECC 0 1 0 0 0.1
+/vis/geometry/set/colour Lead 0 0 0 1 0.1
 /vis/viewer/set/style surface
 /vis/viewer/set/hiddenMarker true
 #/vis/viewer/set/viewpointThetaPhi 120 150
