@@ -14,15 +14,18 @@ PrimaryGeneratorAction::PrimaryGeneratorAction() {
     particleGun->SetParticlePosition(G4ThreeVector(0, 0, 0));
     particleGun->SetParticleMomentumDirection(G4ThreeVector(0, 0, 1));
     
+    gps = new G4GeneralParticleSource();
     
     
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction() {
     delete particleGun;
+    delete gps;
 }
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent) {
     particleGun->GeneratePrimaryVertex(anEvent);
+    gps->GeneratePrimaryVertex(anEvent);
 }
 

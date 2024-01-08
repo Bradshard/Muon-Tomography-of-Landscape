@@ -15,7 +15,7 @@ public:
 
 private:
     // Add any other member variables or functions as needed
+    G4int eventID;  // Declare eventID as a member variable
 };
 
 #endif // EVENTACTION_HH
-

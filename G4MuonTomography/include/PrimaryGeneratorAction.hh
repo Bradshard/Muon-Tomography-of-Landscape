@@ -4,7 +4,7 @@
 
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "G4ParticleGun.hh"
-//#include "G4GeneralParticleSource.hh"
+#include "G4GeneralParticleSource.hh"
 #include "G4Event.hh"
 #include "G4SystemOfUnits.hh"
 
@@ -17,7 +17,7 @@ public:
 
 private:
     G4ParticleGun* particleGun;
-    //G4GeneralParticleSource* gps;
+    G4GeneralParticleSource* gps;
 
     // Add any other member variables or functions as needed
 };

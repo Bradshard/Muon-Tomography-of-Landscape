@@ -82,7 +82,7 @@
 #
 # Axes, scale, etc.
 /vis/scene/add/scale   # Simple scale line
-/vis/scene/add/axes    0 0 0 0.30 meter # Simple axes: x=red, y=green, z=blue.
+/vis/scene/add/axes    0 0 0 0.50 meter # Simple axes: x=red, y=green, z=blue.
 /vis/scene/add/eventID # Drawn at end of event
 /vis/scene/add/date    # Date stamp
 #/vis/scene/add/logo2D  # Simple logo
@@ -102,7 +102,7 @@
 #
 # To get nice view
 # Make the "World" box invisible
-#/vis/geometry/set/visibility World 0 false
+/vis/geometry/set/visibility World 0 false
 # "Envelope" is transparent blue to represent water
 #/vis/geometry/set/colour Water 0 0 0 1 .3
 #/vis/viewer/set/style surface

@@ -45,13 +45,15 @@ int main(int argc, char** argv) {
     if (!ui) {
         // Batch mode
         G4String command = "/control/execute ";
-        G4String fileName = "init.mac";  // Adjust the path if needed
+        //G4String fileName = "init.mac";  // Adjust the path if needed
+        G4String fileName = argv[1];
         UImanager->ApplyCommand(command + fileName);
     } else {
         // Interactive mode
         UImanager->ApplyCommand("/control/execute init.mac");
         ui->SessionStart();
         delete ui;
+        
     }
    /* if ( argc == 1 ) {
      // interactive mode : define UI session
