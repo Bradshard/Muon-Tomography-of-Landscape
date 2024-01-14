@@ -1,0 +1,62 @@
+/run/verbose 2
+/run/initialize
+/control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/scene/add/hits
+/vis/scene/notifyHandlers
+/vis/scene/endOfEventAction accumulate
+/vis/scene/add/scale
+/vis/scene/notifyHandlers
+/vis/scene/add/axes 0 0 0 0.50 meter
+/vis/scene/notifyHandlers
+/vis/scene/add/eventID
+/vis/scene/notifyHandlers
+/vis/scene/add/date
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility World 0 false
+/vis/scene/notifyHandlers
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/control/verbose 0
+/tracking/verbose 0
+/event/verbose 0
+/gps/verbose 2
+/gps/particle mu-
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre 1 2 1 cm
+/gps/pos/halfx 2 cm
+/gps/pos/halfy 2 cm
+/gps/ene/type Lin
+/gps/ene/min 100 GeV
+/gps/ene/max 1000 GeV
+/gps/ene/gradient 1
+/gps/ene/intercept 1
+/gps/direction 0 0 1
+/run/beamOn 1000
+/vis/scene/notifyHandlers scene-0
+/analysis/h1/getVector
+/analysis/h2/getVector
