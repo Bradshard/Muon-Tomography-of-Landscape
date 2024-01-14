@@ -33,6 +33,7 @@ G4double plastic_sizeX = 100.0 * cm;       // cm
 G4double plastic_sizeY = 100.0 * cm;       // cm
 G4double plastic_sizeZ = 0.02 * cm;        // cm
 
+
 // G4double wood_positionZ = 57 * (2 * ecc_sizeZ + plastic_sizeZ + lead_sizeZ);
 
 // Define positions of ECC and lead layers
