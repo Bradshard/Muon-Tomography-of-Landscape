@@ -1,0 +1,32 @@
+/control/verbose 0
+/tracking/verbose 0
+/event/verbose 0
+/gps/verbose 2
+
+#
+/gps/particle mu-
+/gps/pos/type Beam
+#
+# the incident surface is in the x-y plane
+/gps/pos/rot1 1 0 0
+/gps/pos/rot2 0 1 0
+#
+# the beam spot is centered at the origin and is
+# of 1d gaussian shape with a 3mm central plateau
+/gps/pos/shape Circle
+/gps/pos/centre 0. 0. 0. mm  # Centered at the origin
+/gps/pos/radius 3. mm
+/gps/pos/sigma_r .2 mm
+#
+# the beam is travelling along the z-axis with 5 degrees dispersion
+/gps/ang/rot1 1 0 0
+/gps/ang/rot2 0 0 1
+/gps/ang/type beam1d
+/gps/ang/sigma_r 5. deg
+#
+# the beam energy is in gaussian profile centered at 400 GeV
+/gps/ene/type Gauss
+/gps/ene/mono 550 GeV
+/gps/ene/sigma 180. GeV
+/run/beamOn 10000
+
