@@ -1,4 +1,4 @@
-# Install script for directory: /Users/burkanbereketoglu/project
+# Install script for directory: /Users/burkanbereketoglu/g4muontomography
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,20 +38,20 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/burkanbereketoglu/project/build/MyGeant4Executable")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyGeant4Executable" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyGeant4Executable")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/burkanbereketoglu/g4muontomography/build/G4MuographyExe")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/G4MuographyExe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/G4MuographyExe")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyGeant4Executable")
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/G4MuographyExe")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyGeant4Executable")
+      execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/G4MuographyExe")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/burkanbereketoglu/project/build/CMakeFiles/MyGeant4Executable.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/Users/burkanbereketoglu/g4muontomography/build/CMakeFiles/G4MuographyExe.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/burkanbereketoglu/project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/burkanbereketoglu/g4muontomography/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

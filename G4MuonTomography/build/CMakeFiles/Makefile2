@@ -54,16 +54,16 @@ RM = /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/burkanbereketoglu/project
+CMAKE_SOURCE_DIR = /Users/burkanbereketoglu/g4muontomography
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/burkanbereketoglu/project/build
+CMAKE_BINARY_DIR = /Users/burkanbereketoglu/g4muontomography/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyGeant4Executable.dir/all
+all: CMakeFiles/G4MuographyExe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyGeant4Executable.dir/clean
+clean: CMakeFiles/G4MuographyExe.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyGeant4Executable.dir
+# Target rules for target CMakeFiles/G4MuographyExe.dir
 
 # All Build rule for target.
-CMakeFiles/MyGeant4Executable.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/burkanbereketoglu/project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target MyGeant4Executable"
-.PHONY : CMakeFiles/MyGeant4Executable.dir/all
+CMakeFiles/G4MuographyExe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/burkanbereketoglu/g4muontomography/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target G4MuographyExe"
+.PHONY : CMakeFiles/G4MuographyExe.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyGeant4Executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/project/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyGeant4Executable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/project/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyGeant4Executable.dir/rule
+CMakeFiles/G4MuographyExe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/g4muontomography/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/G4MuographyExe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/g4muontomography/build/CMakeFiles 0
+.PHONY : CMakeFiles/G4MuographyExe.dir/rule
 
 # Convenience name for target.
-MyGeant4Executable: CMakeFiles/MyGeant4Executable.dir/rule
-.PHONY : MyGeant4Executable
+G4MuographyExe: CMakeFiles/G4MuographyExe.dir/rule
+.PHONY : G4MuographyExe
 
 # clean rule for target.
-CMakeFiles/MyGeant4Executable.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/clean
-.PHONY : CMakeFiles/MyGeant4Executable.dir/clean
+CMakeFiles/G4MuographyExe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/clean
+.PHONY : CMakeFiles/G4MuographyExe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

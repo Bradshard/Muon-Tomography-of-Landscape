@@ -7,6 +7,14 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/Users/burkanbereketoglu/g4muontomography/CMakeLists.txt"
+  "/Users/burkanbereketoglu/g4muontomography/GaussianGPS.mac"
+  "CMakeFiles/3.28.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.28.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.28.1/CMakeSystem.cmake"
+  "/Users/burkanbereketoglu/g4muontomography/init.mac"
+  "/Users/burkanbereketoglu/g4muontomography/run.mac"
+  "/Users/burkanbereketoglu/g4muontomography/vis.mac"
   "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib/cmake/Geant4/Geant4Config.cmake"
   "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib/cmake/Geant4/Geant4ConfigVersion.cmake"
   "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib/cmake/Geant4/Geant4LibraryDepends-relwithdebinfo.cmake"
@@ -19,13 +27,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib/cmake/Geant4/PTL/PTLTargets-relwithdebinfo.cmake"
   "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib/cmake/Geant4/PTL/PTLTargets.cmake"
   "/Users/burkanbereketoglu/geant4-v11.2.0-install/lib/cmake/Geant4/UseGeant4.cmake"
-  "/Users/burkanbereketoglu/project/CMakeLists.txt"
-  "CMakeFiles/3.28.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.28.1/CMakeSystem.cmake"
-  "/Users/burkanbereketoglu/project/init.mac"
-  "/Users/burkanbereketoglu/project/run.mac"
-  "/Users/burkanbereketoglu/project/vis.mac"
   "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -129,10 +130,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "init.mac"
   "vis.mac"
   "run.mac"
+  "GaussianGPS.mac"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/MyGeant4Executable.dir/DependInfo.cmake"
+  "CMakeFiles/G4MuographyExe.dir/DependInfo.cmake"
   )

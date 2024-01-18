@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/burkanbereketoglu/project
+CMAKE_SOURCE_DIR = /Users/burkanbereketoglu/g4muontomography
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/burkanbereketoglu/project/build
+CMAKE_BINARY_DIR = /Users/burkanbereketoglu/g4muontomography/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/project/build/CMakeFiles /Users/burkanbereketoglu/project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/g4muontomography/build/CMakeFiles /Users/burkanbereketoglu/g4muontomography/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/burkanbereketoglu/g4muontomography/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,48 +162,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyGeant4Executable
+# Target rules for targets named G4MuographyExe
 
 # Build rule for target.
-MyGeant4Executable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyGeant4Executable
-.PHONY : MyGeant4Executable
+G4MuographyExe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 G4MuographyExe
+.PHONY : G4MuographyExe
 
 # fast build rule for target.
-MyGeant4Executable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/build
-.PHONY : MyGeant4Executable/fast
+G4MuographyExe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/build
+.PHONY : G4MuographyExe/fast
 
-MyGeant4Projects.o: MyGeant4Projects.cc.o
-.PHONY : MyGeant4Projects.o
+G4Muography.o: G4Muography.cc.o
+.PHONY : G4Muography.o
 
 # target to build an object file
-MyGeant4Projects.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/MyGeant4Projects.cc.o
-.PHONY : MyGeant4Projects.cc.o
+G4Muography.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/G4Muography.cc.o
+.PHONY : G4Muography.cc.o
 
-MyGeant4Projects.i: MyGeant4Projects.cc.i
-.PHONY : MyGeant4Projects.i
+G4Muography.i: G4Muography.cc.i
+.PHONY : G4Muography.i
 
 # target to preprocess a source file
-MyGeant4Projects.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/MyGeant4Projects.cc.i
-.PHONY : MyGeant4Projects.cc.i
+G4Muography.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/G4Muography.cc.i
+.PHONY : G4Muography.cc.i
 
-MyGeant4Projects.s: MyGeant4Projects.cc.s
-.PHONY : MyGeant4Projects.s
+G4Muography.s: G4Muography.cc.s
+.PHONY : G4Muography.s
 
 # target to generate assembly for a file
-MyGeant4Projects.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/MyGeant4Projects.cc.s
-.PHONY : MyGeant4Projects.cc.s
+G4Muography.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/G4Muography.cc.s
+.PHONY : G4Muography.cc.s
 
 src/DetectorConstruction.o: src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.o
 
 # target to build an object file
 src/DetectorConstruction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/DetectorConstruction.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.cc.o
 
 src/DetectorConstruction.i: src/DetectorConstruction.cc.i
@@ -211,7 +211,7 @@ src/DetectorConstruction.i: src/DetectorConstruction.cc.i
 
 # target to preprocess a source file
 src/DetectorConstruction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/DetectorConstruction.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/DetectorConstruction.cc.i
 .PHONY : src/DetectorConstruction.cc.i
 
 src/DetectorConstruction.s: src/DetectorConstruction.cc.s
@@ -219,7 +219,7 @@ src/DetectorConstruction.s: src/DetectorConstruction.cc.s
 
 # target to generate assembly for a file
 src/DetectorConstruction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/DetectorConstruction.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
 src/EventAction.o: src/EventAction.cc.o
@@ -227,7 +227,7 @@ src/EventAction.o: src/EventAction.cc.o
 
 # target to build an object file
 src/EventAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/EventAction.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/EventAction.cc.o
 .PHONY : src/EventAction.cc.o
 
 src/EventAction.i: src/EventAction.cc.i
@@ -235,7 +235,7 @@ src/EventAction.i: src/EventAction.cc.i
 
 # target to preprocess a source file
 src/EventAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/EventAction.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/EventAction.cc.i
 .PHONY : src/EventAction.cc.i
 
 src/EventAction.s: src/EventAction.cc.s
@@ -243,7 +243,7 @@ src/EventAction.s: src/EventAction.cc.s
 
 # target to generate assembly for a file
 src/EventAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/EventAction.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/EventAction.cc.s
 .PHONY : src/EventAction.cc.s
 
 src/PhysicsList.o: src/PhysicsList.cc.o
@@ -251,7 +251,7 @@ src/PhysicsList.o: src/PhysicsList.cc.o
 
 # target to build an object file
 src/PhysicsList.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/PhysicsList.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/PhysicsList.cc.o
 .PHONY : src/PhysicsList.cc.o
 
 src/PhysicsList.i: src/PhysicsList.cc.i
@@ -259,7 +259,7 @@ src/PhysicsList.i: src/PhysicsList.cc.i
 
 # target to preprocess a source file
 src/PhysicsList.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/PhysicsList.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/PhysicsList.cc.i
 .PHONY : src/PhysicsList.cc.i
 
 src/PhysicsList.s: src/PhysicsList.cc.s
@@ -267,7 +267,7 @@ src/PhysicsList.s: src/PhysicsList.cc.s
 
 # target to generate assembly for a file
 src/PhysicsList.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/PhysicsList.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/PhysicsList.cc.s
 .PHONY : src/PhysicsList.cc.s
 
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
@@ -275,7 +275,7 @@ src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 
 # target to build an object file
 src/PrimaryGeneratorAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/PrimaryGeneratorAction.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/PrimaryGeneratorAction.cc.o
 .PHONY : src/PrimaryGeneratorAction.cc.o
 
 src/PrimaryGeneratorAction.i: src/PrimaryGeneratorAction.cc.i
@@ -283,7 +283,7 @@ src/PrimaryGeneratorAction.i: src/PrimaryGeneratorAction.cc.i
 
 # target to preprocess a source file
 src/PrimaryGeneratorAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/PrimaryGeneratorAction.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/PrimaryGeneratorAction.cc.i
 .PHONY : src/PrimaryGeneratorAction.cc.i
 
 src/PrimaryGeneratorAction.s: src/PrimaryGeneratorAction.cc.s
@@ -291,7 +291,7 @@ src/PrimaryGeneratorAction.s: src/PrimaryGeneratorAction.cc.s
 
 # target to generate assembly for a file
 src/PrimaryGeneratorAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/PrimaryGeneratorAction.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/PrimaryGeneratorAction.cc.s
 .PHONY : src/PrimaryGeneratorAction.cc.s
 
 src/RunAction.o: src/RunAction.cc.o
@@ -299,7 +299,7 @@ src/RunAction.o: src/RunAction.cc.o
 
 # target to build an object file
 src/RunAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/RunAction.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/RunAction.cc.o
 .PHONY : src/RunAction.cc.o
 
 src/RunAction.i: src/RunAction.cc.i
@@ -307,7 +307,7 @@ src/RunAction.i: src/RunAction.cc.i
 
 # target to preprocess a source file
 src/RunAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/RunAction.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/RunAction.cc.i
 .PHONY : src/RunAction.cc.i
 
 src/RunAction.s: src/RunAction.cc.s
@@ -315,7 +315,7 @@ src/RunAction.s: src/RunAction.cc.s
 
 # target to generate assembly for a file
 src/RunAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/RunAction.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/RunAction.cc.s
 .PHONY : src/RunAction.cc.s
 
 src/SteppingAction.o: src/SteppingAction.cc.o
@@ -323,7 +323,7 @@ src/SteppingAction.o: src/SteppingAction.cc.o
 
 # target to build an object file
 src/SteppingAction.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/SteppingAction.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/SteppingAction.cc.o
 .PHONY : src/SteppingAction.cc.o
 
 src/SteppingAction.i: src/SteppingAction.cc.i
@@ -331,7 +331,7 @@ src/SteppingAction.i: src/SteppingAction.cc.i
 
 # target to preprocess a source file
 src/SteppingAction.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/SteppingAction.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/SteppingAction.cc.i
 .PHONY : src/SteppingAction.cc.i
 
 src/SteppingAction.s: src/SteppingAction.cc.s
@@ -339,7 +339,7 @@ src/SteppingAction.s: src/SteppingAction.cc.s
 
 # target to generate assembly for a file
 src/SteppingAction.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyGeant4Executable.dir/build.make CMakeFiles/MyGeant4Executable.dir/src/SteppingAction.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G4MuographyExe.dir/build.make CMakeFiles/G4MuographyExe.dir/src/SteppingAction.cc.s
 .PHONY : src/SteppingAction.cc.s
 
 # Help Target
@@ -354,10 +354,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MyGeant4Executable"
-	@echo "... MyGeant4Projects.o"
-	@echo "... MyGeant4Projects.i"
-	@echo "... MyGeant4Projects.s"
+	@echo "... G4MuographyExe"
+	@echo "... G4Muography.o"
+	@echo "... G4Muography.i"
+	@echo "... G4Muography.s"
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
