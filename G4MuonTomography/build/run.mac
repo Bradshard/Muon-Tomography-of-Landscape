@@ -1,7 +1,0 @@
-# Run macro
-/run/initialize
-/random/setSeeds 123 456
-
-# Set the number of events
-/run/beamOn 10000
-
